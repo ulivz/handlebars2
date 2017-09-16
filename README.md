@@ -1,2 +1,2 @@
-# Undefined
-# Undefined
+# handlebars2
+A simple wrapper of handlebars
