@@ -1,4 +1,4 @@
-const Handlebars = require('handlebars')
+const Handlebars = require('handlebars/dist/cjs/handlebars.js')
 const { setupHelpers } = require('./lib')
 
 setupHelpers(Handlebars)
