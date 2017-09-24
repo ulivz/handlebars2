@@ -7,6 +7,7 @@ const context = {
   author: 'ULIVZ',
   username: 'ulivz',
   name: 'plain-template',
+  camelCaseName: 'plainTemplate',
   website: 'http://www.v2js.com',
   logo: {
     img: 'https://cdn.rawgit.com/ulivz/v-codemirror/master/media/logo.svg',

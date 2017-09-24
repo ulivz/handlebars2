@@ -1,17 +1,14 @@
 {
   "name": "handlebars2",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A simple wrapper of handlebars",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "dependencies": {
     "handlebars": "^4.0.10"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node index.js"
+    "test": "node test/test.js"
   },
   "author": "",
   "license": "ISC"
