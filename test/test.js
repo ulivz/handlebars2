@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-const render = require('../').render
+const render = require('../dist/handlebars2.js').render
 
 const context = {
   usage: true,
