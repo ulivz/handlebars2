@@ -1,15 +1,14 @@
 {
   "name": "handlebars2",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A simple wrapper of handlebars",
-  "main": "index.js",
+  "main": "dist/my-package.umd.js",
   "dependencies": {
     "handlebars": "^4.0.10"
   },
   "devDependencies": {
     "bili": "^0.18.1"
   },
-  "main": "dist/my-package.umd.js",
   "module": "dist/my-package.esm.js",
   "scripts": {
     "build": " bili --format cjs --format umd --format es --compress umd --entry index.js"
