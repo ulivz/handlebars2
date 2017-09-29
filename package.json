@@ -2,17 +2,37 @@
   "name": "handlebars2",
   "version": "0.0.5",
   "description": "A simple wrapper of handlebars",
-  "main": "dist/my-package.umd.js",
+  "main": "dist/handlebars2.js",
+  "module": "dist/handlebars2.es.js",
   "dependencies": {
     "handlebars": "^4.0.10"
   },
   "devDependencies": {
-    "bili": "^0.18.1"
+    "bili": "^0.18.1",
+    "rollup-plugin-commonjs": "^8.2.1",
+    "rollup-plugin-node-resolve": "^3.0.0"
   },
   "module": "dist/my-package.esm.js",
   "scripts": {
-    "build": " bili --format cjs --format umd --format es --compress umd --entry index.js"
+    "build": "bili --entry index.js",
+    "test": "node test/test.js"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "ulivz",
+  "license": "MIT",
+  "babel": {
+    "env": {
+      "test": {
+        "presets": [
+          [
+            "env",
+            {
+              "targets": {
+                "node": "current"
+              }
+            }
+          ]
+        ]
+      }
+    }
+  }
 }
