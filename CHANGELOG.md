@@ -1,3 +1,16 @@
+<a name="0.0.7"></a>
+## [0.0.7](https://github.com/ulivz/handlebars2/compare/v0.0.6...v0.0.7) (2017-09-29)
+
+
+### Features
+
+* **$build:** Use bili to build ([2bcb210](https://github.com/ulivz/handlebars2/commit/2bcb210))
+* **$codeStyle:** add .idea ([6a62ded](https://github.com/ulivz/handlebars2/commit/6a62ded))
+* **$lib:** rewrite by ES6 ([0442cc3](https://github.com/ulivz/handlebars2/commit/0442cc3))
+* **$lib:** Update index ([d4c292b](https://github.com/ulivz/handlebars2/commit/d4c292b))
+
+
+
 <a name="0.0.4"></a>
 ## 0.0.4 (2017-09-28)
 
