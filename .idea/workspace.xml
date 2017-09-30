@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f463fd67-6a1c-4f16-88de-784280aa8524" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -52,8 +51,8 @@
         <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="200">
-                <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <first_editor relative-caret-position="380">
+                <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -89,15 +88,15 @@
             <state relative-caret-position="360">
               <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="18" />
               <folding>
-                <marker date="1506705583000" expanded="true" signature="0:773" ph="{&quot;name&quot;: &quot;handlebars2&quot;...}" />
-                <marker date="1506705583000" expanded="true" signature="415:490" ph="{&quot;build&quot;: &quot;bili --entry index.js&quot;...}" />
-                <marker date="1506705583000" expanded="true" signature="544:771" ph="{...}" />
-                <marker date="1506705583000" expanded="true" signature="557:767" ph="{...}" />
-                <marker date="1506705583000" expanded="true" signature="573:761" ph="{...}" />
-                <marker date="1506705583000" expanded="true" signature="594:753" ph="[...]" />
-                <marker date="1506705583000" expanded="true" signature="606:743" ph="[...]" />
-                <marker date="1506705583000" expanded="true" signature="639:731" ph="{...}" />
-                <marker date="1506705583000" expanded="true" signature="666:717" ph="{&quot;node&quot;: &quot;current&quot;...}" />
+                <marker date="1506705610000" expanded="true" signature="0:773" ph="{&quot;name&quot;: &quot;handlebars2&quot;...}" />
+                <marker date="1506705610000" expanded="true" signature="415:490" ph="{&quot;build&quot;: &quot;bili --entry index.js&quot;...}" />
+                <marker date="1506705610000" expanded="true" signature="544:771" ph="{...}" />
+                <marker date="1506705610000" expanded="true" signature="557:767" ph="{...}" />
+                <marker date="1506705610000" expanded="true" signature="573:761" ph="{...}" />
+                <marker date="1506705610000" expanded="true" signature="594:753" ph="[...]" />
+                <marker date="1506705610000" expanded="true" signature="606:743" ph="[...]" />
+                <marker date="1506705610000" expanded="true" signature="639:731" ph="{...}" />
+                <marker date="1506705610000" expanded="true" signature="666:717" ph="{&quot;node&quot;: &quot;current&quot;...}" />
               </folding>
             </state>
           </provider>
@@ -173,6 +172,7 @@
         <option value="$PROJECT_DIR$/dist/handlebars2.js" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/CHANGELOG.md" />
       </list>
     </option>
   </component>
@@ -414,10 +414,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15664000" />
+    <option name="totallyTimeSpent" value="16120000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="23" width="1680" height="962" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14948764" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -539,15 +540,15 @@
         <state relative-caret-position="40">
           <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
           <folding>
-            <marker date="1506705583000" expanded="true" signature="0:773" ph="{&quot;name&quot;: &quot;handlebars2&quot;...}" />
-            <marker date="1506705583000" expanded="true" signature="415:490" ph="{&quot;build&quot;: &quot;bili --entry index.js&quot;...}" />
-            <marker date="1506705583000" expanded="true" signature="544:771" ph="{...}" />
-            <marker date="1506705583000" expanded="true" signature="557:767" ph="{...}" />
-            <marker date="1506705583000" expanded="true" signature="573:761" ph="{...}" />
-            <marker date="1506705583000" expanded="true" signature="594:753" ph="[...]" />
-            <marker date="1506705583000" expanded="true" signature="606:743" ph="[...]" />
-            <marker date="1506705583000" expanded="true" signature="639:731" ph="{...}" />
-            <marker date="1506705583000" expanded="true" signature="666:717" ph="{&quot;node&quot;: &quot;current&quot;...}" />
+            <marker date="1506705610000" expanded="true" signature="0:773" ph="{&quot;name&quot;: &quot;handlebars2&quot;...}" />
+            <marker date="1506705610000" expanded="true" signature="415:490" ph="{&quot;build&quot;: &quot;bili --entry index.js&quot;...}" />
+            <marker date="1506705610000" expanded="true" signature="544:771" ph="{...}" />
+            <marker date="1506705610000" expanded="true" signature="557:767" ph="{...}" />
+            <marker date="1506705610000" expanded="true" signature="573:761" ph="{...}" />
+            <marker date="1506705610000" expanded="true" signature="594:753" ph="[...]" />
+            <marker date="1506705610000" expanded="true" signature="606:743" ph="[...]" />
+            <marker date="1506705610000" expanded="true" signature="639:731" ph="{...}" />
+            <marker date="1506705610000" expanded="true" signature="666:717" ph="{&quot;node&quot;: &quot;current&quot;...}" />
           </folding>
         </state>
       </provider>
@@ -573,15 +574,15 @@
         <state relative-caret-position="40">
           <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
           <folding>
-            <marker date="1506705583000" expanded="true" signature="0:773" ph="{&quot;name&quot;: &quot;handlebars2&quot;...}" />
-            <marker date="1506705583000" expanded="true" signature="415:490" ph="{&quot;build&quot;: &quot;bili --entry index.js&quot;...}" />
-            <marker date="1506705583000" expanded="true" signature="544:771" ph="{...}" />
-            <marker date="1506705583000" expanded="true" signature="557:767" ph="{...}" />
-            <marker date="1506705583000" expanded="true" signature="573:761" ph="{...}" />
-            <marker date="1506705583000" expanded="true" signature="594:753" ph="[...]" />
-            <marker date="1506705583000" expanded="true" signature="606:743" ph="[...]" />
-            <marker date="1506705583000" expanded="true" signature="639:731" ph="{...}" />
-            <marker date="1506705583000" expanded="true" signature="666:717" ph="{&quot;node&quot;: &quot;current&quot;...}" />
+            <marker date="1506705610000" expanded="true" signature="0:773" ph="{&quot;name&quot;: &quot;handlebars2&quot;...}" />
+            <marker date="1506705610000" expanded="true" signature="415:490" ph="{&quot;build&quot;: &quot;bili --entry index.js&quot;...}" />
+            <marker date="1506705610000" expanded="true" signature="544:771" ph="{...}" />
+            <marker date="1506705610000" expanded="true" signature="557:767" ph="{...}" />
+            <marker date="1506705610000" expanded="true" signature="573:761" ph="{...}" />
+            <marker date="1506705610000" expanded="true" signature="594:753" ph="[...]" />
+            <marker date="1506705610000" expanded="true" signature="606:743" ph="[...]" />
+            <marker date="1506705610000" expanded="true" signature="639:731" ph="{...}" />
+            <marker date="1506705610000" expanded="true" signature="666:717" ph="{&quot;node&quot;: &quot;current&quot;...}" />
           </folding>
         </state>
       </provider>
@@ -709,8 +710,8 @@
     <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="200">
-            <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <first_editor relative-caret-position="380">
+            <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
@@ -778,15 +779,15 @@
         <state relative-caret-position="360">
           <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="18" />
           <folding>
-            <marker date="1506705583000" expanded="true" signature="0:773" ph="{&quot;name&quot;: &quot;handlebars2&quot;...}" />
-            <marker date="1506705583000" expanded="true" signature="415:490" ph="{&quot;build&quot;: &quot;bili --entry index.js&quot;...}" />
-            <marker date="1506705583000" expanded="true" signature="544:771" ph="{...}" />
-            <marker date="1506705583000" expanded="true" signature="557:767" ph="{...}" />
-            <marker date="1506705583000" expanded="true" signature="573:761" ph="{...}" />
-            <marker date="1506705583000" expanded="true" signature="594:753" ph="[...]" />
-            <marker date="1506705583000" expanded="true" signature="606:743" ph="[...]" />
-            <marker date="1506705583000" expanded="true" signature="639:731" ph="{...}" />
-            <marker date="1506705583000" expanded="true" signature="666:717" ph="{&quot;node&quot;: &quot;current&quot;...}" />
+            <marker date="1506705610000" expanded="true" signature="0:773" ph="{&quot;name&quot;: &quot;handlebars2&quot;...}" />
+            <marker date="1506705610000" expanded="true" signature="415:490" ph="{&quot;build&quot;: &quot;bili --entry index.js&quot;...}" />
+            <marker date="1506705610000" expanded="true" signature="544:771" ph="{...}" />
+            <marker date="1506705610000" expanded="true" signature="557:767" ph="{...}" />
+            <marker date="1506705610000" expanded="true" signature="573:761" ph="{...}" />
+            <marker date="1506705610000" expanded="true" signature="594:753" ph="[...]" />
+            <marker date="1506705610000" expanded="true" signature="606:743" ph="[...]" />
+            <marker date="1506705610000" expanded="true" signature="639:731" ph="{...}" />
+            <marker date="1506705610000" expanded="true" signature="666:717" ph="{&quot;node&quot;: &quot;current&quot;...}" />
           </folding>
         </state>
       </provider>
