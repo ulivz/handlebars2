@@ -1,6 +1,6 @@
 module.exports = {
-  plugins: [
-  ],
+  // plugins: [
+  // ],
   resolve: true, // rollup-plugin-commonjs
   // commonjs: {
   //   include: 'node_modules/**'
