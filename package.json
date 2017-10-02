@@ -15,7 +15,8 @@
   },
   "files": [
     "dist/*.js",
-    "lib"
+    "lib",
+    "index.js"
   ],
   "scripts": {
     "build": "bili --entry index.js",
