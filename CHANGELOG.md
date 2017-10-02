@@ -1,3 +1,13 @@
+<a name="0.0.9"></a>
+## [0.0.9](https://github.com/ulivz/handlebars2/compare/v0.0.8...v0.0.9) (2017-10-02)
+
+
+### Features
+
+* **$pkg:** add property files ([d5b9703](https://github.com/ulivz/handlebars2/commit/d5b9703))
+
+
+
 <a name="0.0.7"></a>
 ## [0.0.7](https://github.com/ulivz/handlebars2/compare/v0.0.6...v0.0.7) (2017-09-29)
 
