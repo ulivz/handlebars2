@@ -1,3 +1,13 @@
+<a name="0.0.10"></a>
+## [0.0.10](https://github.com/ulivz/handlebars2/compare/v0.0.9...v0.0.10) (2017-10-02)
+
+
+### Bug Fixes
+
+* **$pkg:** lose index.js in package ([20e35cc](https://github.com/ulivz/handlebars2/commit/20e35cc))
+
+
+
 <a name="0.0.9"></a>
 ## [0.0.9](https://github.com/ulivz/handlebars2/compare/v0.0.8...v0.0.9) (2017-10-02)
 
