@@ -1,3 +1,13 @@
+<a name="0.0.11"></a>
+## [0.0.11](https://github.com/ulivz/handlebars2/compare/v0.0.10...v0.0.11) (2017-10-03)
+
+
+### Features
+
+* **$helpers:** add new helpers: nospace, nobreak, noindent, noblankline ([c4944a1](https://github.com/ulivz/handlebars2/commit/c4944a1))
+
+
+
 <a name="0.0.10"></a>
 ## [0.0.10](https://github.com/ulivz/handlebars2/compare/v0.0.9...v0.0.10) (2017-10-02)
 
