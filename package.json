@@ -1,6 +1,6 @@
 {
   "name": "handlebars2",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "A simple wrapper of handlebars",
   "main": "dist/handlebars2.js",
   "module": "dist/my-package.esm.js",

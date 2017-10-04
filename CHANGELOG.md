@@ -1,3 +1,13 @@
+<a name="0.0.13"></a>
+## [0.0.13](https://github.com/ulivz/handlebars2/compare/v0.0.12...v0.0.13) (2017-10-04)
+
+
+### Features
+
+* **$helper:** add ifeq ([6a56890](https://github.com/ulivz/handlebars2/commit/6a56890))
+
+
+
 <a name="0.0.12"></a>
 ## [0.0.12](https://github.com/ulivz/handlebars2/compare/v0.0.11...v0.0.12) (2017-10-03)
 
