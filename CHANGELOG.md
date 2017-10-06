@@ -1,3 +1,21 @@
+<a name="0.0.14"></a>
+## [0.0.14](https://github.com/ulivz/handlebars2/compare/v0.0.13...v0.0.14) (2017-10-06)
+
+
+### Bug Fixes
+
+* **$ci:** tweaks losing xo ([65329f1](https://github.com/ulivz/handlebars2/commit/65329f1))
+* **ci:** tweaks losing preset rem ([b0d7e5f](https://github.com/ulivz/handlebars2/commit/b0d7e5f))
+
+
+### Features
+
+* **$ci:** add circleCI ([46c32d7](https://github.com/ulivz/handlebars2/commit/46c32d7))
+* **build:** Add test and lint ([8174022](https://github.com/ulivz/handlebars2/commit/8174022))
+* **readme:** update ([a55ec2f](https://github.com/ulivz/handlebars2/commit/a55ec2f))
+
+
+
 <a name="0.0.13"></a>
 ## [0.0.13](https://github.com/ulivz/handlebars2/compare/v0.0.12...v0.0.13) (2017-10-04)
 
