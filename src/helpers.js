@@ -1,19 +1,14 @@
-"use strict"
+import { camelize, hyphenate, split } from './util'
 
-import {camelize, hyphenate, split} from './util'
+const trimLeft = /^\s+/
+const trimRight = /\s+$/
+const blankLine = /^(\s*)\n/g
 
-const
-  trimLeft = /^\s+/,
-  trimRight = /\s+$/,
-  blankLine = /^(\s*)\n/g
-
-const setupHelpers = Handlebars => {
-
+export default function setupHelpers(Handlebars) {
   const SafeString = Handlebars.SafeString
-  const getPartial = (name) => Handlebars.partials[name]
+  const getPartial = name => Handlebars.partials[name]
 
   const helpersMap = {
-
     /* [arguments...], options */
     partial(name, opts) {
       if (!name) {
@@ -26,7 +21,7 @@ const setupHelpers = Handlebars => {
       if (!name) {
         return
       }
-      let partial = getPartial(`partial_${name}`) || opts.fn
+      const partial = getPartial(`partial_${name}`) || opts.fn
       return partial(this, { data: opts.hash })
     },
 
@@ -66,17 +61,17 @@ const setupHelpers = Handlebars => {
     },
 
     nospace(opts) {
-      var result = opts.fn(this);
+      const result = opts.fn(this)
       return new SafeString(result.replace(/\s/g, ''))
     },
 
     nobreak(opts) {
-      var result = opts.fn(this);
+      const result = opts.fn(this)
       return new SafeString(result.replace(/\n/g, ''))
     },
 
     noindent(opts) {
-      var result = opts.fn(this);
+      const result = opts.fn(this)
       return new SafeString(
         result
           .replace(/^/gm, '<TOL>')
@@ -88,25 +83,26 @@ const setupHelpers = Handlebars => {
     },
 
     noblankline(opts) {
-      var result = opts.fn(this);
+      const result = opts.fn(this)
       return new SafeString(result.replace(blankLine, ''))
     },
 
     ifeq(left, right, options) {
       if (!left || !right) {
-        return;
+        return
       }
-      return (left === right) ? options.fn(this) : options.inverse(this);
-    }
+      return left === right ? options.fn(this) : options.inverse(this)
+    },
 
-}
+    ifuneq(left, right, options) {
+      if (!left || !right) {
+        return
+      }
+      return left === right ? options.inverse(this) : options.fn(this)
+    }
+  }
 
   Object.keys(helpersMap).forEach(name => {
     Handlebars.registerHelper(name, helpersMap[name])
   })
-
-}
-
-export {
-  setupHelpers
 }

@@ -33,7 +33,7 @@ const context = {
         q: "How's it different from a boilerplate?",
         a: `It's hard to upgrade your project if you're using a boilerplate since you might change the code to suit your needs. However you can easily upgrade your project to use latest version of Poi by simply updating the dependency. You can also get rid of boilerplate code in this way.`
       }
-    ],
+    ]
   },
   using: {
     newname: 'Projects Using Docute',
@@ -42,7 +42,7 @@ const context = {
         name: 'codepan',
         username: 'egoist',
         description: 'Like codepen and jsbin but works offline.'
-      },
+      }
     ]
   },
   customizeColums: [
@@ -53,6 +53,9 @@ const context = {
   ]
 }
 
-const readmeTmpl = fs.readFileSync(path.resolve(__dirname, './test.hbs'), 'utf-8')
+const readmeTmpl = fs.readFileSync(
+  path.resolve(__dirname, './test.hbs'),
+  'utf-8'
+)
 
 fs.writeFileSync('./test/test-result.hbs', render(readmeTmpl, context), 'utf-8')
