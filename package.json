@@ -6,7 +6,7 @@
   "module": "dist/my-package.esm.js",
   "dependencies": {
     "handlebars": "^4.0.10",
-    "handlebars-helpers": "^0.9.8"
+    "handlebars-utils": "^1.0.4"
   },
   "devDependencies": {
     "babel-jest": "^21.2.0",
@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "build": "bili",
-    "test": "BABEL_ENV=test jest --env node && npm run lint && npm run build --no-cache",
+    "test": "BABEL_ENV=test jest --env node && npm run lint",
     "test:cov": "BABEL_ENV=test jest --env node --coverage && xo src/*.js",
     "lint": "xo",
     "lint:fix": "xo --fix"
@@ -42,7 +42,8 @@
       "import/no-unresolved": 0
     },
     "ignores": [
-      "docs/**"
+      "docs/**",
+      "src/helpers/handlebars-utils.js"
     ]
   }
 }

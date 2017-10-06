@@ -1,12 +1,11 @@
-import handlebars from 'handlebars/lib/handlebars'
-import helpers from 'handlebars-helpers'
-import { setupHelpers } from './helpers'
+import handlebars from 'handlebars'
+// import helpers from 'handlebars-helpers'
+import helpers from './helpers'
 
 /**
  * Setup helpers
  */
-setupHelpers(handlebars)
-helpers({ handlebars })
+helpers(handlebars)
 
 /**
  * render

@@ -2,3 +2,4 @@ node_modules
 dist*/
 .idea
 *result*
+npm-debug.log

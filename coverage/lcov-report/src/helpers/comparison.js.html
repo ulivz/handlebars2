@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/helpers/comparison.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">src/helpers</a> comparison.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/31</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/18</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/31</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export default {
+  /**
+   * Render a block when a comparison of the first and third
+   * arguments returns true. The second argument is
+   * the [arithemetic operator][operators] to use. You may also
+   * optionally specify an inverse block to render when falsy.
+   *
+   * @param `a`
+   * @param `operator` The operator to use. Operators must be enclosed in quotes: `"&gt;"`, `"="`, `"&lt;="`, and so on.
+   * @param `b`
+   * @param {Object} `options` Handlebars provided options object
+   * @return {String} Block, or if specified the inverse block is rendered if falsey.
+   * @block
+   * @api public
+   */
+  compare(a, operator, b, options) {
+    /* eslint eqeqeq: 0 */
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (arguments.length &lt; 4) {</span>
+<span class="cstat-no" title="statement not covered" >      throw new Error('handlebars Helper {{compare}} expects 4 arguments')</span>
+    }
+&nbsp;
+    let result
+<span class="cstat-no" title="statement not covered" >    switch (operator) {</span>
+      case '==':
+<span class="cstat-no" title="statement not covered" >        result = a == b</span>
+<span class="cstat-no" title="statement not covered" >        break</span>
+      case '===':
+<span class="cstat-no" title="statement not covered" >        result = a === b</span>
+<span class="cstat-no" title="statement not covered" >        break</span>
+      case '!=':
+<span class="cstat-no" title="statement not covered" >        result = a != b</span>
+<span class="cstat-no" title="statement not covered" >        break</span>
+      case '!==':
+<span class="cstat-no" title="statement not covered" >        result = a !== b</span>
+<span class="cstat-no" title="statement not covered" >        break</span>
+      case '&lt;':
+<span class="cstat-no" title="statement not covered" >        result = a &lt; b</span>
+<span class="cstat-no" title="statement not covered" >        break</span>
+      case '&gt;':
+<span class="cstat-no" title="statement not covered" >        result = a &gt; b</span>
+<span class="cstat-no" title="statement not covered" >        break</span>
+      case '&lt;=':
+<span class="cstat-no" title="statement not covered" >        result = a &lt;= b</span>
+<span class="cstat-no" title="statement not covered" >        break</span>
+      case '&gt;=':
+<span class="cstat-no" title="statement not covered" >        result = a &gt;= b</span>
+<span class="cstat-no" title="statement not covered" >        break</span>
+      case 'typeof':
+<span class="cstat-no" title="statement not covered" >        result = typeof a === b</span>
+<span class="cstat-no" title="statement not covered" >        break</span>
+      default: {
+<span class="cstat-no" title="statement not covered" >        throw new Error(</span>
+          'helper {{compare}}: invalid operator: `' + operator + '`'
+        )
+      }
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    return result ? options.fn(this) : options.inverse(this)</span>
+  },
+&nbsp;
+  /**
+   * Block helper that renders the block if **both** of the given values
+   * are truthy. If an inverse block is specified it will be rendered
+   * when falsy.
+   *
+   * @param {any} `a`
+   * @param {any} `b`
+   * @param {Object} `options` Handlebars provided options object
+   * @return {String}
+   * @block
+   * @api public
+   */
+&nbsp;
+  and() {
+    const len = <span class="cstat-no" title="statement not covered" >arguments.length - 1</span>
+    const options = <span class="cstat-no" title="statement not covered" >arguments[len]</span>
+    let val = <span class="cstat-no" title="statement not covered" >true</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    for (let i = 0; i &lt; len; i++) {</span>
+<span class="cstat-no" title="statement not covered" >      if (!arguments[i]) {</span>
+<span class="cstat-no" title="statement not covered" >        val = false</span>
+<span class="cstat-no" title="statement not covered" >        break</span>
+      }
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    return val ? options.fn(this) : options.inverse(this)</span>
+  }
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Oct 07 2017 01:21:32 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
