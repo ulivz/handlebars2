@@ -1,5 +1,5 @@
 # handlebars2
-> A simple wrapper of handlebars
+> Accommodating template renderer
 
 ## Badges
 
@@ -11,7 +11,6 @@
 
 - partial
 - slot
-- base
 - json
 - trim
 - camelize
