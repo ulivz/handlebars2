@@ -27,13 +27,6 @@ export default {
     return partial(this, { data: opts.hash })
   },
 
-  base(name) {
-    if (!name) {
-      return
-    }
-    return new SafeString(name)
-  },
-
   json(context) {
     if (!context) {
       return
