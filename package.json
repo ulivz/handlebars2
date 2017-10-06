@@ -26,9 +26,9 @@
   "scripts": {
     "build": "bili",
     "test": "BABEL_ENV=test jest --env node && npm run lint",
-    "test:cov": "BABEL_ENV=test jest --env node --coverage && xo src/*.js",
-    "lint": "xo",
-    "lint:fix": "xo --fix"
+    "test:cov": "BABEL_ENV=test jest --env node --coverage && npm run lint",
+    "lint": "xo src/*.js",
+    "lint:fix": "npm run lint -- --fix"
   },
   "author": "ulivz",
   "license": "MIT",
@@ -41,7 +41,9 @@
       "jest"
     ],
     "rules": {
-      "import/no-unresolved": 0
+      "import/no-unresolved": 0,
+      "valid-typeof": 0,
+      "import/no-mutable-exports": 0
     },
     "ignores": [
       "docs/**",

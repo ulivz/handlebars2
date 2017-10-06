@@ -1,6 +1,6 @@
 import comparison from './comparison'
 import core from './core'
-import {initialize} from './utils'
+import { initialize } from './utils'
 
 /**
  * Register handlebar helpers

@@ -80,19 +80,5 @@ export default {
   noblankline(opts) {
     const result = opts.fn(this)
     return new SafeString(result.replace(blankLine, ''))
-  },
-
-  ifeq(left, right, options) {
-    if (!left || !right) {
-      return
-    }
-    return left === right ? options.fn(this) : options.inverse(this)
-  },
-
-  ifuneq(left, right, options) {
-    if (!left || !right) {
-      return
-    }
-    return left === right ? options.inverse(this) : options.fn(this)
   }
 }

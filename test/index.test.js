@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import {render} from '../src'
+import { render } from '../src'
 import core from '../src/helpers/core'
 import comparison from '../src/helpers/comparison'
 
@@ -20,18 +20,15 @@ function Promisify(fn) {
 }
 
 function get(name) {
-  let target = path.join(templateDir, `${name}.hbs`)
+  const target = path.join(templateDir, `${name}.hbs`)
   if (!fs.existsSync(target)) {
     throw new Error('No such template!')
   }
   return fs.readFileSync(target, 'utf-8')
 }
 
-
 describe('render', () => {
-
   describe('core helpers', () => {
-
     test('base', () => {
       const ctx = { name: 'ulivz' }
       const result = render(get('base'), ctx)
@@ -47,7 +44,7 @@ describe('render', () => {
     test('json', () => {
       const ctx = { name: { name: 'ulivz' } }
       const result = render(get('json'), ctx)
-      expect(result).toBe("{\"name\":\"ulivz\"}")
+      expect(result).toBe('{"name":"ulivz"}')
     })
 
     test('trim', () => {
@@ -55,17 +52,14 @@ describe('render', () => {
       const result = render(get('trim'), ctx)
       expect(result).toBe('Luke Chen')
     })
-
   })
 
   describe('comparison', () => {
-
     test('and', () => {
       const ctx = { a: true, b: false }
       const result = render(get('and'), ctx)
-      expect(result).toBe("false")
+      expect(result).toBe('false')
     })
-
   })
 })
 
@@ -75,7 +69,6 @@ const mockOpts = {
 }
 
 describe('mock', async () => {
-
   test('and', () => {
     const c1 = comparison.compare(1, '==', '1', mockOpts)
     expect(c1).toBe(true)
@@ -97,12 +90,13 @@ describe('mock', async () => {
     expect(c9).toBe(true)
     return Promise.all([
       Promisify(comparison.compare, 1).catch(error => {
-        expect(error.message).toBe('handlebars Helper {{compare}} expects 4 arguments')
+        expect(error.message).toBe(
+          'handlebars Helper {{compare}} expects 4 arguments'
+        )
       }),
       Promisify(comparison.compare, 1, '?', 1, mockOpts).catch(error => {
         expect(error.message).toBe('helper {{compare}}: invalid operator: `?`')
-      }),
+      })
     ])
   })
-
 })

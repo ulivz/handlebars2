@@ -17,6 +17,18 @@
 - hyphenate
 - split
 - normalizeurl
+- normalizeurl
+- nospace
+- nobreak
+- noindent
+- noblankline
+
+### API
+
+- render
+- handlebars
+- registerPartial
+- renderPartial
 
 ## Install
 

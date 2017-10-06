@@ -1,6 +1,7 @@
 import handlebars from 'handlebars'
-// import helpers from 'handlebars-helpers'
 import helpers from './helpers'
+
+const registerPartial = handlebars.registerPartial
 
 /**
  * Setup helpers
@@ -30,4 +31,4 @@ function renderPartial(name, context) {
   return partial ? partial(context) : new Error(`cannot find partial ${name}`)
 }
 
-export { handlebars as default, render, renderPartial }
+export { handlebars as default, render, renderPartial, registerPartial }
