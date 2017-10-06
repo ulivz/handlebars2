@@ -14,6 +14,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "bili": "^0.18.1",
     "conventional-changelog-cli": "^1.3.3",
+    "eslint-config-rem": "^3.2.0",
     "jest-cli": "^21.2.1",
     "xo": "^0.18.2"
   },
