@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import { render } from '../src'
+import {render, registerPartial, renderPartial} from '../src'
 import core from '../src/helpers/core'
 import comparison from '../src/helpers/comparison'
 
@@ -28,6 +28,10 @@ function get(name) {
 }
 
 describe('render', () => {
+
+  /**
+   * core.js
+   */
   describe('core helpers', () => {
     test('base', () => {
       const ctx = { name: 'ulivz' }
@@ -52,8 +56,51 @@ describe('render', () => {
       const result = render(get('trim'), ctx)
       expect(result).toBe('Luke Chen')
     })
+
+    test('camelize', () => {
+      const ctx = { name: 'camel-case' }
+      const result = render(get('camelize'), ctx)
+      expect(result).toBe('camelCase')
+    })
+
+    test('hyphenate', () => {
+      const ctx = { name: 'camelCase' }
+      const result = render(get('hyphenate'), ctx)
+      expect(result).toBe('camel-case')
+    })
+
+    test('split - default', () => {
+      const ctx = { name: 'camelCase' }
+      const result = render(get('split'), ctx)
+      expect(result).toBe('camel case')
+    })
+
+    test('normalizeurl', () => {
+      const ctx = { url: 'http://www.v2js.com'}
+      const result = render(get('normalizeurl'), ctx)
+      expect(result).toBe('v2js.com')
+    })
+
+    test('nospace', () => {
+      const result = render(get('nospace'))
+      expect(result).toBe('abc')
+    })
+
+    test('nobreak', () => {
+      const result = render(get('nobreak'))
+      expect(result).toBe('a  b    c')
+    })
+
+    test('noblankline', () => {
+      const result = render(get('noblankline'))
+      console.log({a:result})
+      expect(result).toBe('a\nb\nc\n')
+    })
   })
 
+  /**
+   * comparison.js
+   */
   describe('comparison', () => {
     test('and', () => {
       const ctx = { a: true, b: false }
@@ -68,7 +115,20 @@ const mockOpts = {
   inverse: () => false
 }
 
-describe('mock', async () => {
+describe('mock', () => {
+
+  test('and', () => {
+    registerPartial('p1', get('base'))
+    const result = renderPartial('p1', { name: 'ulivz' })
+    expect(result).toBe('ulivz')
+  })
+
+  test('and - should throw error when not found partial', () => {
+    return Promisify(renderPartial, 'p2').catch(error => {
+      expect(error.message).toBe('cannot find partial p2')
+    })
+  })
+
   test('and', () => {
     const c1 = comparison.compare(1, '==', '1', mockOpts)
     expect(c1).toBe(true)

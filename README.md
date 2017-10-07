@@ -17,7 +17,6 @@
 - hyphenate
 - split
 - normalizeurl
-- normalizeurl
 - nospace
 - nobreak
 - noindent

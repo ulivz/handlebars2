@@ -21,6 +21,7 @@
   "files": [
     "dist/*.js",
     "lib",
+    "test",
     "index.js"
   ],
   "scripts": {

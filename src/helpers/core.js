@@ -9,29 +9,35 @@ import {
 
 const trimLeft = /^\s+/
 const trimRight = /\s+$/
-const blankLine = /^(\s*)\n/g
+
+/**
+ * Check necessary arguements
+ * @param argMap
+ */
+function nullCheck(argMap) {
+  const argkeys = Object.keys(argMap)
+  for (let i = 0, l = argkeys.length; i < l; i++) {
+    if (!argMap[argkeys[i]]) {
+      throw new Error(`Expected arguement "${argkeys[i]}"`)
+    }
+  }
+}
 
 export default {
   partial(name, opts) {
-    if (!name) {
-      return
-    }
+    nullCheck({ name: arguments[0] })
     registerPartial(`partial_${name}`, opts.fn)
   },
 
   slot(name, opts) {
-    if (!name) {
-      return
-    }
+    nullCheck({ name: arguments[0] })
     const partial = getPartial(`partial_${name}`) || opts.fn
     return partial(this, { data: opts.hash })
   },
 
-  json(context) {
-    if (!context) {
-      return
-    }
-    return new SafeString(JSON.stringify(context))
+  json(ctx) {
+    nullCheck({ ctx: arguments[0] })
+    return new SafeString(JSON.stringify(ctx))
   },
 
   trim(opts) {
@@ -40,18 +46,23 @@ export default {
   },
 
   camelize(ctx) {
+    nullCheck({ ctx: arguments[0] })
     return new SafeString(camelize(ctx))
   },
 
   hyphenate(ctx) {
+    nullCheck({ ctx: arguments[0] })
     return new SafeString(hyphenate(ctx))
   },
 
   split(ctx, opts) {
-    return new SafeString(split(ctx, opts.hash.sep))
+    nullCheck({ ctx: arguments[0] })
+    let sep = opts.hash && opts.hash.sep || ' '
+    return new SafeString(split(ctx, sep))
   },
 
   normalizeurl(ctx) {
+    nullCheck({ ctx: arguments[0] })
     return new SafeString(ctx.replace(/^https?:\/\/(www.)?/, ''))
   },
 
@@ -79,6 +90,6 @@ export default {
 
   noblankline(opts) {
     const result = opts.fn(this)
-    return new SafeString(result.replace(blankLine, ''))
+    return new SafeString(result.replace(/\s*\n\s*/g, '\n'))
   }
 }
