@@ -51,6 +51,13 @@ describe('render', () => {
       expect(result).toBe('{"name":"ulivz"}')
     })
 
+    test('json - throw error', () => {
+      return Promisify(render, get('json'))
+        .catch(error => {
+          expect(error.message).toBe('Expected arguement "ctx"')
+        })
+    })
+
     test('trim', () => {
       const ctx = { name: 'Luke Chen' }
       const result = render(get('trim'), ctx)
@@ -89,6 +96,11 @@ describe('render', () => {
     test('nobreak', () => {
       const result = render(get('nobreak'))
       expect(result).toBe('a  b    c')
+    })
+
+    test('noindent', () => {
+      const result = render(get('noindent'))
+      expect(result).toBe('a\n\nb\n\n\nc\n')
     })
 
     test('noblankline', () => {
