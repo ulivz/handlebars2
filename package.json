@@ -2,7 +2,7 @@
   "name": "handlebars2",
   "version": "0.0.15",
   "description": "A simple wrapper of handlebars",
-  "main": "dist/handlebars2.js",
+  "main": "dist/handlebars2.common.js",
   "module": "dist/my-package.esm.js",
   "dependencies": {
     "handlebars": "^4.0.10",
