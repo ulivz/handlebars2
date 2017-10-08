@@ -1,5 +1,5 @@
 import handlebars from 'handlebars'
-import helpers from './helpers'
+import helpers from './helpers/index'
 import { registerPartial } from './helpers/utils'
 
 /**

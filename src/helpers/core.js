@@ -1,3 +1,6 @@
+/**
+ * @api public/helpers
+ */
 import {
   registerPartial,
   getPartial,
@@ -24,10 +27,18 @@ function nullCheck(argMap) {
 }
 
 export default {
+  /**
+   * @name partial
+   * @description Registers partials accessible by any template in the environment
+   * @param name {String}
+   * @return null
+   * @example test/fixtures/templates/partial-slot.hbs
+   */
   partial(name, opts) {
     nullCheck({ name: arguments[0] })
     registerPartial(`partial_${name}`, opts.fn)
   },
+
 
   slot(name, opts) {
     nullCheck({ name: arguments[0] })

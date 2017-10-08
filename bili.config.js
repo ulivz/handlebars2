@@ -1,14 +1,14 @@
 module.exports = {
   // plugins: [
   // ],
-  resolve: true, // rollup-plugin-commonjs
+  resolve: false, // rollup-plugin-commonjs
   // commonjs: {
   //   include: 'node_modules/**'
   // },
   exports: 'named',
   moduleName: 'handlebars2',
-  format: 'es,umd,cjs',
-  compress: 'umd,cjs',
+  format: 'es,cjs',
+  compress: 'cjs',
   banner: {
     name: 'handlebars2',
     version: require('./package.json').version,
