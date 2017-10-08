@@ -1,3 +1,13 @@
+<a name="0.0.15"></a>
+## [0.0.15](https://github.com/ulivz/handlebars2/compare/v0.0.14...v0.0.15) (2017-10-08)
+
+
+### Features
+
+* **$build:** remove umd ([6985a4a](https://github.com/ulivz/handlebars2/commit/6985a4a))
+
+
+
 <a name="0.0.14"></a>
 ## [0.0.14](https://github.com/ulivz/handlebars2/compare/v0.0.13...v0.0.14) (2017-10-06)
 
