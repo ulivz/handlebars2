@@ -1,5 +1,3 @@
-import { registerPartial } from './helpers/utils'
-
 export default function(handlebars) {
   /**
    * render
@@ -11,11 +9,6 @@ export default function(handlebars) {
     const compiler = handlebars.compile(template)
     return compiler(context)
   }
-
-  /**
-   * register partial
-   */
-  handlebars.registerPartial = registerPartial
 
   /**
    * render partial

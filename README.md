@@ -1,33 +1,9 @@
-# handlebars2
-> Accommodating template renderer
+# Handlebars2.js
+> Just expand the [handlebars.js](https://github.com/wycats/handlebars.js)
 
 ## Badges
 
 [![NPMversion](https://img.shields.io/npm/v/handlebars2.svg?style=flat)](https://npmjs.com/package/handlebars2) [![NPMdownloads](https://img.shields.io/npm/dm/handlebars2.svg?style=flat)](https://npmjs.com/package/handlebars2) [![CircleCI](https://circleci.com/gh/ulivz/handlebars2/tree/master.svg?style=shield)](https://circleci.com/gh/ulivz/handlebars2/tree/master) [![codecov](https://codecov.io/gh/ulivz/handlebars2/branch/master/graph/badge.svg)](https://codecov.io/gh/ulivz/handlebars2)
-
-## Docs
-
-### built-in helpers
-
-- partial
-- slot
-- json
-- trim
-- camelize
-- hyphenate
-- split
-- normalizeurl
-- nospace
-- nobreak
-- noindent
-- noblankline
-
-### API
-
-- render
-- handlebars
-- registerPartial
-- renderPartial
 
 ## Install
 
@@ -37,7 +13,7 @@ Install _handlebars2_:
 # Either globally
 yarn global add handlebars2
 # Or locally (preferred)
-yarn add handlebars2 --dev
+yarn add handlebars2 --save--dev
 ```
 
 or, If you use `npm`:
@@ -46,6 +22,206 @@ or, If you use `npm`:
 npm i handlebars2 -g
 npm i handlebars2 --save-dev
 ```
+
+## Quick Start
+
+Import in your project:
+
+```js
+// ES6 Module
+import Handlebars2 from 'handlebars2'
+
+// Or, if you use CommonJS
+const Handlebars2 = require('handlebars2')
+
+// Go hacking!
+```
+
+## API
+
+### Handlebars2.render(template, context)
+
+#### template 
+
+-  type: __string__
+-  description: template string
+
+#### context
+- type: __object__
+- description: context used to render template
+  
+```js
+const template = '{{ name }}'
+Handlebars2.render(template, {name: 'Handlebars2'}) // => Handlebars2
+```  
+
+### Handlebars2.renderPartial(partialName)
+
+#### partialName
+
+- type: __string__
+- description: render a partial registered by `Handlebars2.registerPartial`
+
+```js
+Handlebars2.registerPartial('temp', '{{name}}')
+Handlebars2.renderPartial('temp', { name: 'Handlebars2' }) // => Handlebars2
+```
+
+## built-in helpers
+
+### partial
+
+- [Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#37) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#50)
+
+
+A helper for using `Handlebars.registerPartial` in your template.
+
+### slot
+
+- [Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#43) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#50)
+
+
+A helper for using `Handlebars.renderPartial` in your template.
+
+- `Example`:
+
+```handlebars
+{{#partial "p1"}}
+  {{ name }}
+{{/partial}}
+
+{{#slot "p1"}}
+{{/slot}}
+```
+
+```js
+const ctx = { name: 'hbs2' }
+```
+
+Rendering result will be `hbs2`.
+
+### json
+
+- [Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#49) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#62)
+
+A helper used to `JSON stringify` the giving input.
+
+- `Example`:
+
+```handlebars
+{{json data}}
+```
+
+```js
+const context = { data: { statusCode: 200, msg: 'success'} }
+```
+
+Rendering result will be `'{"statusCode":200,"msg":"success"}'`.
+
+
+### trim
+
+- [Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#54) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#69)
+
+A helper used to `trim` the giving input.
+
+
+### camelize
+
+- [Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#59) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#75)
+
+A helper used to `camelize` the __hyphenated__ giving input.
+
+- `Example`:
+
+```handlebars
+{{camelize name}}
+```
+
+```js
+const context = { name: 'camel-case' }
+```
+
+Rendering result will be `'camelCase'`.
+
+
+### hyphenate
+
+- [Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#64) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#81)
+
+Opposite to [camelize](#camelize), A helper used to `hyphenate` the __camelized__ giving input.
+
+- `Example`:
+
+```handlebars
+{{hyphenate name}}
+```
+
+```js
+const context = { name: 'camelCase' }
+```
+
+Rendering result will be `'camel-case'`.
+
+
+### split
+
+- [Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#69) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#93)
+
+A helper used to combine the __camelized__ giving input with specified hyphen.
+A helper used to combine the __camelized__ giving input with specified hyphen.
+
+- `Example`:
+
+```handlebars
+{{ split name sep=sep }}
+```
+
+```js
+const context = { name: 'camelCase', sep: '_' }
+```
+
+Rendering result will be `'camel_case'`.
+
+> If not giving `sep`, default is `' '`
+
+
+### normalizeurl
+
+- [Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#75) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#99)
+
+A helper used to normalize the URL.
+
+```
+http://www.v2js.com => v2js.com 
+https://www.v2js.com => v2js.com 
+www.v2js.com => v2js.com 
+```
+
+### nospace
+
+- [Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#80) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#105)
+
+A helper that outputs the content without any space.
+
+### nobreak
+
+- [Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#85) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#110)
+
+A helper that outputs the content without any break.
+
+### noindent
+
+- [Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#90) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#115)
+
+A helper that outputs the content without any line-first indent
+
+### noblankline
+
+- [Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#102) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#120)
+
+A helper that outputs the content without any blank line.
+
 
 ## Contributing
 
