@@ -1,3 +1,13 @@
+<a name="0.1.1"></a>
+## [0.1.1](https://github.com/ulivz/handlebars2/compare/v0.1.0...v0.1.1) (2017-10-23)
+
+
+### Features
+
+* **$build:** add compiler files to build ([984e84d](https://github.com/ulivz/handlebars2/commit/984e84d))
+
+
+
 <a name="0.1.0"></a>
 # [0.1.0](https://github.com/ulivz/handlebars2/compare/v0.0.17...v0.1.0) (2017-10-08)
 
