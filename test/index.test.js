@@ -1,9 +1,8 @@
 import fs from 'fs'
 import path from 'path'
-import {render, registerPartial, renderPartial} from '../src'
-import core from '../src/helpers/core'
+import hbs2 from '../dist/handlebar2'
 import comparison from '../src/helpers/comparison'
-
+let {render, registerPartial, renderPartial} = hbs2
 const templateDir = path.join(__dirname, 'fixtures/templates')
 
 /**
