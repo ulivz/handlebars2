@@ -71,14 +71,14 @@ Handlebars2.renderPartial('temp', { name: 'Handlebars2' }) // => Handlebars2
 
 ### partial
 
-[Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#L37) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#L50)
+- [Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#L37) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#L50)
 
 
 A helper for using `Handlebars.registerPartial` in your template.
 
 ### slot
 
-[Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#L43) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#L50)
+- [Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#L43) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#L50)
 
 
 A helper for using `Handlebars.renderPartial` in your template.
@@ -102,7 +102,7 @@ Rendering result will be `hbs2`.
 
 ### json
 
-[Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#L49) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#L62)
+- [Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#L49) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#L62)
 
 A helper used to `JSON stringify` the giving input.
 
@@ -121,14 +121,14 @@ Rendering result will be `'{"statusCode":200,"msg":"success"}'`.
 
 ### trim
 
-[Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#L54) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#L69)
+- [Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#L54) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#L69)
 
 A helper used to `trim` the giving input.
 
 
 ### camelize
 
-[Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#L59) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#L75)
+- [Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#L59) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#L75)
 
 A helper used to `camelize` the __hyphenated__ giving input.
 
@@ -147,7 +147,7 @@ Rendering result will be `'camelCase'`.
 
 ### hyphenate
 
-[Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#L64) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#L81)
+- [Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#L64) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#L81)
 
 Opposite to [camelize](#camelize), A helper used to `hyphenate` the __camelized__ giving input.
 
@@ -166,7 +166,7 @@ Rendering result will be `'camel-case'`.
 
 ### split
 
-[Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#L69) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#L93)
+- [Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#L69) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#L93)
 
 A helper used to combine the __camelized__ giving input with specified hyphen.
 A helper used to combine the __camelized__ giving input with specified hyphen.
@@ -188,7 +188,7 @@ Rendering result will be `'camel_case'`.
 
 ### normalizeurl
 
-[Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#L75) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#L99)
+- [Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#L75) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#L99)
 
 A helper used to normalize the URL.
 
@@ -200,25 +200,25 @@ www.v2js.com => v2js.com
 
 ### nospace
 
-[Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#L80) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#L105)
+- [Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#L80) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#L105)
 
 A helper that outputs the content without any space.
 
 ### nobreak
 
-[Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#L85) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#L110)
+- [Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#L85) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#L110)
 
 A helper that outputs the content without any break.
 
 ### noindent
 
-[Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#L90) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#L115)
+- [Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#L90) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#L115)
 
 A helper that outputs the content without any line-first indent
 
 ### noblankline
 
-[Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#L102) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#L120)
+- [Code](https://github.com/ulivz/handlebars2/blob/master/src/helpers/core.js#L102) | [Test](https://github.com/ulivz/handlebars2/blob/master/test/index.test.js#L120)
 
 A helper that outputs the content without any blank line.
 
