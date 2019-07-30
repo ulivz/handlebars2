@@ -3,7 +3,7 @@
 
 ## Badges
 
-[![NPMversion](https://img.shields.io/npm/v/handlebars2.svg?style=flat)](https://npmjs.com/package/handlebars2) [![NPMdownloads](https://img.shields.io/npm/dm/handlebars2.svg?style=flat)](https://npmjs.com/package/handlebars2) [![CircleCI](https://circleci.com/gh/ulivz/handlebars2/tree/master.svg?style=shield)](https://circleci.com/gh/ulivz/handlebars2/tree/master) [![codecov](https://codecov.io/gh/ulivz/handlebars2/branch/master/graph/badge.svg)](https://codecov.io/gh/ulivz/handlebars2)
+[![NPMversion](https://img.shields.io/npm/v/handlebars2.svg?style=flat)](https://npmjs.com/package/handlebars2) [![NPMdownloads](https://img.shields.io/npm/dm/handlebars2.svg?style=flat)](https://npmjs.com/package/handlebars2) [![CircleCI](https://circleci.com/gh/ulivz/handlebars2/tree/master.svg?style=shield)](https://circleci.com/gh/ulivz/handlebars2/tree/master) [![codecov](https://codecov.io/gh/ulivz/handlebars2/branch/master/graph/badge.svg)](https://codecov.io/gh/ulivz/handlebars2) [![Greenkeeper badge](https://badges.greenkeeper.io/ulivz/handlebars2.svg)](https://greenkeeper.io/)
 
 ## Install
 
